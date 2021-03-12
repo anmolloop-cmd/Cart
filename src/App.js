@@ -8,7 +8,7 @@ class App extends React.Component {
     this.state = {
       products: [
         {
-          price: 9099,
+          price: 9000,
           title: 'Mobile Phone',
           qty: 1,
           img: 'https://images-eu.ssl-images-amazon.com/images/I/41sGASjc4-L._SX300_SY300_QL70_FMwebp_.jpg',
@@ -82,7 +82,7 @@ class App extends React.Component {
           DecreaseQuantity={this.handleDecrease}
           DeleteQuantity={this.handleDelete}
         />
-        <div style={{ fontSize: 60, color: "black", paddingLeft: 5, border: "3px solid green" }}> TOTAL:{this.getCartTotal()}</div>
+        <div style={{ fontSize: 40, color: "black", paddingLeft: 5, border: "10px solid blue" }}> TOTAL=>RS.{this.getCartTotal()}</div>
       </div>
     );
   }
